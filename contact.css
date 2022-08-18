@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    min-height: 100vh;
+    background: url("bg-img2.jpg");
+    background-size: auto;  
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+.logo{
+    max-height: 100px;
+    font-size: 2em;
+    color: darkviolet ;
+
+}
+.colorfill{
+    color: #fd4766;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    
+}
+nav ul li a{
+    color: #1d1d24;
+    position: relative;
+    padding: 5px 0;
+    font-size: 1.5em;
+}
+nav ul li a:hover{
+    color: #fd4766;
+}
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #fd4766;
+    transition: .3s;
+    bottom: 0;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('');
+}
+.content .icons{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+.content .icons a{
+    text-decoration: none;
+    color: black;
+}
+.content .icons a:hover{
+    color: blue;
+}
+.content .icons .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.contact-form{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+
+}
+.contact-form h2{
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+}
+.contact-form .input-box{
+    position: relative;
+    width:100%;
+    margin-top: 10px;
+}
+.contact-form .input-box input, 
+.contact-form .input-box textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin:10px 0 ;
+    border: none;
+    border-bottom: 2px solid grey;
+    outline: none;
+    resize: none;
+}
+.contact-form .input-box .information{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin:10px 0 ;
+    pointer-events: none;
+    transition: 0.5s;
+    color: blue;
+}
+.contact-form .input-box input:focus ~ .information,
+.contact-form .input-box input:valid ~ .information,
+.contact-form .input-box textarea:focus ~ .information,
+.contact-form .input-box textarea:valid ~ .information{
+    color: red;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contact-form .input-box input[type="submit"] 
+{
+    width: 100px;
+    background-color: aqua;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+.copyright{
+    background-color: #1d1d24;
+    color: gray;
+    text-align: center;
+    height: 30px;
+    width:100%;
+    padding-top: 5px;
+    font-weight: 1000;
+}
+
+.fa-solid, .fa-brands{
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+@media(max-width:991px)
+{
+    .container{
+        padding: 50px;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .content .icons{
+        margin-bottom: 40px;
+    }
+    .content .icons .contact-form{
+        width:100%
+    }
+}
