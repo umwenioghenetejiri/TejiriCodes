@@ -109,12 +109,27 @@ nav ul li a:hover:after{
     padding: 20px;
     font-weight: 500;
     font-size: 1.2em;
+    font-style: oblique;
+}
+h2{
+    color: #700c5a;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 90px;
+    text-transform: inherit;
+    width: 70%;
+    text-align: center;
+}.experience{
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    padding: 15px;
+    
 }
 .copyright{
     background-color: #1d1d24;
     color: gray;
     text-align: center;
-    height: 30px;
+    height: 40px;
     width:100%;
     padding-top: 5px;
     font-weight: 1000;
@@ -126,4 +141,8 @@ nav ul li a:hover:after{
     text-transform: uppercase;
     letter-spacing: 4px;
     
+}
+.socials{
+    display: inline-block;
+    padding: 3px;
 }
